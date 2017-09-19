@@ -4,6 +4,7 @@ const merge = require('lodash/merge');
 
 const PLUGIN_CONST = require('./lib/constants');
 const renderers = require('./lib/renderers');
+const utils = require('./lib/utils');
 
 const defaultOpts = {
   renderer: 'bootstrap3',
@@ -42,6 +43,14 @@ const createGroup = () => {
 
 const renderCodeGroup = (md, options, content, block) => {
   const parsedCodeBlocks = codeBlocks(content);
+  parsedCodeBlocks.forEach((item, i) => {
+    const descriptor = item.lang;
+    item.tabId = `${descriptor.replace(PLUGIN_CONST.langSeperator, '-')}-${i}`;
+    item.tabName = utils.getTabName(descriptor);
+    item.langName = utils.getLangName(descriptor);
+    item.sanitizedBlock = item.block.replace(descriptor, item.langName);
+    item.render = md.render(item.sanitizedBlock);
+  });
   return renderers[options.renderer](md, options, parsedCodeBlocks, content, block);
 };
 
