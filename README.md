@@ -17,8 +17,8 @@ markdown.use(codeGroup);
 ## Description
 
 This plugin creates a codegroup in the html syntax for the following: 
-- [Bootstrap 3 tabs](https://getbootstrap.com/docs/3.3/javascript/#tabs) 
-    - requires: jquery, boostrap 3 (js, css)
+- [Bootstrap 3 Tabs](https://getbootstrap.com/docs/3.3/javascript/#tabs) 
+    - `requires`: jQuery, Boostrap 3 (js, css)
 
 
 ### Syntax 
@@ -55,7 +55,7 @@ func application(_ application: UIApplication) -> Bool {
 
 ![codegroup](https://i.imgur.com/YJAwalP.png)
 
-**Please Note:** The dark theme in this example is a custom style. you can choose to styles the tabs however you see fit.
+**Please Note:** The dark theme in this example is a custom style. Styles can be customized however you see fit.
 
 ### Custom Named Tabs
 
