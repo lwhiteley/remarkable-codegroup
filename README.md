@@ -12,28 +12,28 @@ This plugin creates a codegroup in the html syntax for the following:
 
 ```markdown
 [codegroup]
-```js
+\```js
 const docFolder = 'source/docs'
 const docPath = `./${docFolder}`;
 const fileGlob = '**/*.md'
 const publicFolder = 'public';
 const htmlTemplate = fs.readFileSync('source/doc.template.html', 'utf8')
-```
+\```
 
-```js::sdk
+\```js::sdk
 const docFolder = 'source/docs'
 const docPath = `./${docFolder}`;
 const fileGlob = '**/*.md'
 const publicFolder = 'public';
 const htmlTemplate = fs.readFileSync('source/doc.template.html', 'utf8')
-```
+\```
 
-```swift
+\```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
   sampleApp = SampleApplication()
   return true
 }
-```
+\```
 [/codegroup]
 ```
 
