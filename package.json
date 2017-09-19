@@ -1,6 +1,6 @@
 {
   "name": "remarkable-codegroup",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "remarkable plugin to put code blocks into groups",
   "main": "index.js",
   "scripts": {
