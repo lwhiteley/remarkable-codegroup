@@ -1,4 +1,7 @@
 # remarkable-codegroup
+
+[![npm version](https://badge.fury.io/js/remarkable-codegroup.svg)](https://badge.fury.io/js/remarkable-codegroup)
+
 remarkable plugin to put code blocks into groups
 
 ## Getting Started
