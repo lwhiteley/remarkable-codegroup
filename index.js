@@ -1,6 +1,7 @@
 
 const codeBlocks = require('gfm-code-blocks');
 const merge = require('lodash/merge');
+const cryptoRandomString = require('crypto-random-string');
 
 const PLUGIN_CONST = require('./lib/constants');
 const renderers = require('./lib/renderers');
@@ -45,7 +46,7 @@ const renderCodeGroup = (md, options, content, block) => {
   const parsedCodeBlocks = codeBlocks(content);
   parsedCodeBlocks.forEach((item, i) => {
     const descriptor = item.lang;
-    item.tabId = `${descriptor.replace(PLUGIN_CONST.langSeperator, '-')}-${i}`;
+    item.tabId = `${descriptor.replace(PLUGIN_CONST.langSeperator, '-')}-${cryptoRandomString(10)}-${i}`;
     item.tabName = utils.getTabName(descriptor);
     item.langName = utils.getLangName(descriptor);
     item.sanitizedBlock = item.block.replace(descriptor, item.langName);
