@@ -67,6 +67,11 @@ As seen in the example above, tabs can have custom names for situations where yo
 The example above shows a code block `js::sdk`, where `js` is the language syntax to be used and `sdk` denotes the name to be seen in the tab; we use `::` to separate both terms.
 
 
+Similar Projects
+
+- [gitbook-plugin-codegroup](https://github.com/lwhiteley/gitbook-plugin-codegroup)
+
+
 Notes:
 - Pull requests are welcome
 
